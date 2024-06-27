@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Nunito-SemiBold.ttf">
+            <string>Nunito-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeView" customModule="pokemon" customModuleProvider="target">
+            <connections>
+                <outlet property="myPokemonVw" destination="APs-yh-8wp" id="c8e-a3-yni"/>
+                <outlet property="pokemonListVw" destination="Mb2-uM-ekd" id="9s0-D6-7Uh"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_logo_pokemon" translatesAutoresizingMaskIntoConstraints="NO" id="oF6-TP-N9X">
+                    <rect key="frame" x="20" y="89" width="353" height="160"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="160" id="Msg-sS-aOV"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="APs-yh-8wp">
+                    <rect key="frame" x="20" y="329" width="353" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My Pokemon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PDO-jC-0bE">
+                            <rect key="frame" x="126.66666666666666" y="13.333333333333313" width="100" height="23.333333333333329"/>
+                            <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray2Color"/>
+                    <constraints>
+                        <constraint firstItem="PDO-jC-0bE" firstAttribute="centerX" secondItem="APs-yh-8wp" secondAttribute="centerX" id="0cg-TI-qVl"/>
+                        <constraint firstAttribute="height" constant="50" id="cxP-cm-eiT"/>
+                        <constraint firstItem="PDO-jC-0bE" firstAttribute="centerY" secondItem="APs-yh-8wp" secondAttribute="centerY" id="ivE-3V-YK9"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mb2-uM-ekd">
+                    <rect key="frame" x="20" y="399" width="353" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokemon List" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DMl-OK-Sh8">
+                            <rect key="frame" x="124.33333333333334" y="13.333333333333313" width="104.33333333333334" height="23.333333333333329"/>
+                            <fontDescription key="fontDescription" name="Nunito-SemiBold" family="Nunito" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemGray3Color"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="88f-bk-SC7"/>
+                        <constraint firstItem="DMl-OK-Sh8" firstAttribute="centerX" secondItem="Mb2-uM-ekd" secondAttribute="centerX" id="LAF-TK-dDf"/>
+                        <constraint firstItem="DMl-OK-Sh8" firstAttribute="centerY" secondItem="Mb2-uM-ekd" secondAttribute="centerY" id="ebQ-c6-zaA"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemGray5Color"/>
+            <constraints>
+                <constraint firstItem="Mb2-uM-ekd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="6CU-Ie-kjg"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="oF6-TP-N9X" secondAttribute="trailing" constant="20" id="Nf3-Me-1GY"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Mb2-uM-ekd" secondAttribute="trailing" constant="20" id="Ru3-n3-4gT"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="APs-yh-8wp" secondAttribute="trailing" constant="20" id="TPb-rK-fq5"/>
+                <constraint firstItem="oF6-TP-N9X" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="UJu-qh-RjZ"/>
+                <constraint firstItem="Mb2-uM-ekd" firstAttribute="top" secondItem="APs-yh-8wp" secondAttribute="bottom" constant="20" id="a9v-zj-MQZ"/>
+                <constraint firstItem="APs-yh-8wp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="g0a-ON-Cne"/>
+                <constraint firstItem="oF6-TP-N9X" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="pR4-Zn-5Wa"/>
+                <constraint firstItem="APs-yh-8wp" firstAttribute="top" secondItem="oF6-TP-N9X" secondAttribute="bottom" constant="80" id="tgY-9g-PWH"/>
+            </constraints>
+            <point key="canvasLocation" x="60" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_logo_pokemon" width="300" height="108.33333587646484"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294120000001" green="0.68235294120000001" blue="0.69803921570000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.78039215689999997" green="0.78039215689999997" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

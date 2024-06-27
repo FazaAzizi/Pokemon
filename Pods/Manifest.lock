@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (5.9.1)
+  - netfox (1.21.0)
+  - SDWebImage (5.19.2):
+    - SDWebImage/Core (= 5.19.2)
+  - SDWebImage/Core (5.19.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - netfox
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - netfox
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: f36a35757af4587d8e4f4bfa223ad10be2422b8c
+  netfox: 9d5cc727fe7576c4c7688a2504618a156b7d44b7
+  SDWebImage: dfe95b2466a9823cf9f0c6d01217c06550d7b29a
+
+PODFILE CHECKSUM: 1e56465306879c2c34ed66f4966d8998ebf0e66a
+
+COCOAPODS: 1.15.0

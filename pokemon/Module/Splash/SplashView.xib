@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashView" customModule="pokemon" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="lwV-rT-fHN">
+                    <rect key="frame" x="20" y="340.33333333333331" width="353" height="196.66666666666669"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_pokeball" translatesAutoresizingMaskIntoConstraints="NO" id="fph-bF-vnl">
+                            <rect key="frame" x="116.66666666666666" y="0.0" width="120" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="120" id="MMX-I8-vWL"/>
+                                <constraint firstAttribute="height" constant="120" id="WDm-FA-MdZ"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pokemon" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uZt-jG-65u">
+                            <rect key="frame" x="82.000000000000014" y="140" width="189.33333333333337" height="56.666666666666657"/>
+                            <fontDescription key="fontDescription" name="NotoSansKannada-Bold" family="Noto Sans Kannada" pointSize="42"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemGray5Color"/>
+            <constraints>
+                <constraint firstItem="lwV-rT-fHN" firstAttribute="centerY" secondItem="fnl-2z-Ty3" secondAttribute="centerY" id="Hyy-5K-mhz"/>
+                <constraint firstItem="lwV-rT-fHN" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="I0u-35-Fg4"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lwV-rT-fHN" secondAttribute="trailing" constant="20" id="iu2-GL-UPI"/>
+            </constraints>
+            <point key="canvasLocation" x="60" y="20"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_pokeball" width="100" height="100"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
